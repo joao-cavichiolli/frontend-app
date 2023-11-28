@@ -1,5 +1,5 @@
-#FROM node:carbon
-FROM node:12-alpine
+FROM node:carbon
+#FROM node:12-alpine
 
 
 ENV NODE_ENV development
