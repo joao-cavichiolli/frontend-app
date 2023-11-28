@@ -4,6 +4,7 @@ FROM node:carbon
 
 ENV NODE_ENV development
 
+RUN npm cache clean --force
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
