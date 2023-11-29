@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: jfront 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jfront
+  template:
+    metadata:
+      labels:
+        app: jfront 
+    spec:
+      containers:
+        - name: jfront 
+          image: jcavidocker.azurecr.io/jfront
+          ports:
+          - containerPort: 80
